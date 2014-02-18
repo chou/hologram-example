@@ -15,9 +15,11 @@
         <div class="container">
               <span>
                 <ul class="docNav listInline">
-                    <% for c in categories %>
-                    <li><a href="/styleguide/<%= c[0] %>.html"><%= c[0] %></a></li>
-                    <% end %>
+                    
+                    <li><a href="/styleguide/alerts.html">alerts</a></li>
+                    
+                    <li><a href="/styleguide/basics.html">basics</a></li>
+                    
                 </ul>
               </span>
         </div>
@@ -30,11 +32,19 @@
                 <div class="componentMenu box boxBasic backgroundBasic">
                     <div class="boxBody pan">
                         <ul class="componentList listBorderedHover">
-                            <% blocks.each do |block| %>
-                            <li><a href="#<%= block[:name] %>"><%= block[:title] %></a></li>
-                            <% end %>
+                            
+                            <li><a href="#alert">Alert</a></li>
+                            
                         </ul>
                     </div>
                 </div>
             </div>
-            <div class="main col cols20 lastCol">
+            <div class="main col cols20 lastCol"><h1 id="alert">Alert</h1>
+<div class="codeExample"><div class="exampleOutput">  <div class='alert'>Hello</div>
+</div><div class="codeBlock"><div class="highlight"><pre>  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">&#39;alert&#39;</span><span class="nt">&gt;</span>Hello<span class="nt">&lt;/div&gt;</span>
+</pre></div></div></div>                    </div>
+                </div>
+            </section>
+        </div>
+    </body>
+</html>
