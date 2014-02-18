@@ -90,20 +90,22 @@ Creating the Styleguide
 ###Using Hologram
 
 The syntax Hologram parses in order to include components in the styleguide is
-    /*doc
-    ---
-    title: Alert
-    name: alert
-    category: basics
-    ---
-    ```html_example
-        <div class='alert'>Hello</div>
-    ```
-    */
+
+	/*doc
+	---
+	title: Alert
+	name: alert
+	category: basics
+	---
+	```html_example
+   	<div class='alert'>Hello</div>
+	```
+	*/
     
-    .alert{
-      color: blue;
-    }
+	.alert{
+  		color: blue;
+	}  
+
 This tells Hologram what title to list the component under ("Alert"), the name used to apply it ("alert"), and the category it falls in ("basics").
 ###Initial Run
 `bundle exec guard` to start watching your assets for changes. Now you won't have to worry about manually running Hologram all the time.  
