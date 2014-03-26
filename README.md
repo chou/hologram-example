@@ -1,8 +1,10 @@
+Update: [wrote a gem](https://github.com/chou/hologram_rails) that allows you to quickly get started with this approach.
+
 #Using Hologram with Rails to Auto-Generate Styleguides
 <br>
 Styleguides are handy because they document conventions for projects; making communication easier across the team whether it's between PM and dev, client and consultant, or front-endand back-end. Transitions are a little easier with declared standards already in place (pair rotation, onboarding new hires, transfer of responsibilities). From a technical perspective, styleguides keep the front end DRY with project standards and decrease the frequency of visual inconsistencies.
 
-Despite the benefits styleguides offer, the rote documentation of CSS isn't exactly an inspiring challenge. So the team at Trulia made a gem called [Hologram]("http://trulia.github.io/hologram/") that parses and documents CSS for you.  
+Despite the benefits styleguides offer, the rote documentation of CSS isn't exactly an inspiring challenge. So the team at Trulia made a gem called [Hologram](http://trulia.github.io/hologram/) that parses and documents CSS for you.  
 The setup isn't always straightforward, especially with Rails; but after setting up Hologram with some help from Guard, no additional work is needed to maintain the styleguide.
 <br><br>
 ##Overview
@@ -43,9 +45,8 @@ Hologram doesn't watch your stylesheets for changes, so to avoid having to run i
 
 In Gemfile, add 
 ```ruby
-gem 'guard-hologram', github: "kmayer/guard-hologram", require: false
+gem 'guard-hologram', require: false
 ```
-(Have to specify repo because the gem wasn't pushed.)  
 
 `bundle` to install the gems.
 
